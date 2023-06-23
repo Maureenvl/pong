@@ -75,7 +75,6 @@ Ball.prototype.update = function() {
     this.reset()
   }
 
-  // Off screen on right. Player wins.
   if (this.x > game.width) {
     game.player.score += 1
     this.reset()

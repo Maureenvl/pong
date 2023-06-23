@@ -39,3 +39,5 @@ Entity.prototype.intersect = function(other) {
          this.x + this.width  > other.x &&
          this.x               < other.x + other.width
 }
+
+//return etc

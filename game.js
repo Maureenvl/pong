@@ -107,21 +107,12 @@ Game.prototype.variableTimeStep = function() {
       timeDelta = currentTime - this.lastUpdateTime,
       percentageOfInterval = timeDelta / interval
 
-  // NOTE: This requires changing the update function
-  // to support partial updating.
-  //
-  // Eg.:
-  //
-  //   Entity.prototype.update = function(percentage) {
-  //     this.x += this.xVelocity * percentage
-  //     this.y += this.yVelocity * percentage
-  //   }
-  //
-  // Also don't forget to pass that argument in Game.prototype.update.
+  
   this.update(percentageOfInterval)
   this.draw()
 
   this.lastUpdateTime = new Date().getTime()
 }
 
-;//
+;// 
+// hi

@@ -15,7 +15,6 @@ Paddle.prototype.constructor = Paddle
 Paddle.prototype.update = function() {
   Entity.prototype.update.apply(this, arguments)
 
-  // Keep the paddle within the screen
   this.y = Math.min(Math.max(this.y, 0),
                     game.height - this.height)
 }

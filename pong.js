@@ -12,7 +12,6 @@ Background.prototype.draw = function(context) {
 }
 
 
-// Initialize and start the game
 
 var game = new Game($('canvas')[0])
 
